@@ -1,0 +1,13 @@
+<h2>Welcome <%= user.getUsername %> </h2>
+
+
+<ul>
+	
+	<form action="/<%= user.getUsername %>/picture" enctype="multipart/form-data" method="POST">
+		<input type="file" name="picture"/>
+		<input type='text' name='title'/>
+		<input type='text' name='comment'/>
+
+		<button type='submit'>Submit</button>
+	</form>
+</ul>

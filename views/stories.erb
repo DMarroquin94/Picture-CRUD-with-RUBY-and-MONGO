@@ -1,0 +1,11 @@
+<h2>Stories avaliable!</h2>
+<ul class="stories">
+	<% files.each do |file| %>
+		<li>
+			<a href="/<%= file %>" ><%= file %></a>
+		</li>
+	<% end %>
+</ul>
+<form action="upload" method="GET">
+	<button type="submit">Upload story!</button>
+</form

@@ -1,0 +1,135 @@
+html {
+	height: 100%;
+    background: black;
+}
+
+body {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lightgray;
+	border: 3px solid white;
+	border-radius: 20px;
+	padding: 25px;
+	padding-bottom: 10px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-family: "fantasy";
+
+	color: darkblue;
+}
+
+h3 {
+	text-align: right;
+	margin-top: -50px;
+	margin-right: 30px;
+	color: darkgreen;
+}
+
+button {
+	background-color: #D56C2A;
+    color: white;
+    font-size: 13px;
+    font-weight:  bolder;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 38%;
+}
+
+img {
+	border: 2px solid darkblue;
+	height: 150px;
+	width: 150px;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+button.form {
+	margin-top: 25px;
+}
+
+form label {
+	
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+ul.pics {
+	list-style-type: none;
+	border: none;
+}
+
+
+ul.pics li {
+	display: inline-block;
+}
+
+ul.stories {
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
+
+input.file {
+
+}
+
+button.file {
+	margin-bottom: -130px;
+}
+
+p {
+	font-family: "Lucida Sans Unicode";
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+nav ul li {
+	margin-bottom: 15px;
+}
+
+form.login input {
+	text-align: center;
+}
+
+form.signup {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 200px;
+}
+
+button.submit {
+	margin-top: 5px;
+}
+
+form button {
+	background-color: darkblue;
+}
+
+form.pic {
+	width: 100px;
+	margin-left: 200px;
+}
+nav ul li a button {
+	background-color: white;
+	color: black;
+}
+
+button.submit {
+	background-color: darkblue;
+}

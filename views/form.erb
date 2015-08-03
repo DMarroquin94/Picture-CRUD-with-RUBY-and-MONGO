@@ -1,0 +1,36 @@
+<h2>Fill in the blanks!</h2>
+<% if (loggedInUser == "") %>
+		<h3>Hello Anon</h3>
+	<% else %>
+		<h3>Hello <%= loggedInUser %></h3>
+	<% end %>	
+
+
+<form class="login" action="/login" method='POST'>
+	<label>Username</label>
+	<input type="text" name="username" />
+
+	<label>Password</label>
+	<input type="text" name="password" />
+
+	<button class='submit' type="submit">Submit</button>
+</form>                              
+
+<form class="signup" action="/signup" method='POST'>
+	<label>Username</label>
+	<input type="text" name="username" />
+
+	<label>Password</label>
+	<input type="text" name="password" />
+
+	<label>First name</label>
+	<input type="text" name="firstname" />
+
+	<label>Last name</label>
+	<input type="text" name="lastname" />
+
+	<label>Email</label>
+	<input type="text" name="email" />
+
+	<button class='submit' type="submit">Submit</button>
+</form>                              

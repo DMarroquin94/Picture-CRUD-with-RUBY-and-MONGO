@@ -1,0 +1,36 @@
+<h2>Welcome to <%= user['username'] %> page </h2>     
+
+<% if (loggedInUser == "") %>
+		<h3>Hello Anon</h3>
+	<% else %>
+		<h3>Hello <%= loggedInUser %></h3>
+	<% end %>	
+
+<ul class='pics'>
+	<% pics.each do |img| %>
+	<li>
+		<h2><%= img['title'] %></h2>
+		<img src="<%= img['path'] %>">
+		<p><%= img["comment"] %></p>
+		<% if (loggedInUser == "") %>
+		<% else %>
+			<a href="deletepic/<%= img["id"] %>"><button class='submit'>Delete</button></a>
+		<% end %>
+	</li>
+	<% end %>
+</ul>	
+
+<% if (loggedInUser == "") %>
+
+<% else %>
+	<form class='pic' action="/<%= user['username'] %>/picture" enctype="multipart/form-data" method="POST">
+	<input type="file" name="picture"/>
+	<label>Title</label>
+	<input type='text' name='title'/>
+	<label>Comment</label>
+	<input type='text' name='comment'/>
+
+	<button type='submit'>Submit</button>
+</form>   
+<% end %>
+   

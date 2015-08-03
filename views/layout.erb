@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="<%= url("/style.css")%>">
+		<title>Radlips!</title>
+	</head>
+	 <body>
+      <%= yield %>
+
+      <nav>
+      	<ul>
+      		<li>
+                        <a href="/"><button>Home</button></a>
+                  </li>
+                  <% if (loggedInUser == "") %>
+      		    <li>
+                        <a href="login"><button>Log-in</button></a>
+                      </li>
+      		<% else %>
+                      <li>
+                        <a href="/<%= loggedInUser %>"><button>Profile</button></a>
+                      </li>
+                      <li>
+                        <a href="logout"><button>Log-out</button></a>
+                      </li>
+                  <% end %>
+      	</ul>
+      </nav>
+   </body>
+</html>

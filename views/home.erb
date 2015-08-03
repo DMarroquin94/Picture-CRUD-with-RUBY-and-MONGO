@@ -1,0 +1,19 @@
+<h1>Home</h1>
+
+<ul>
+
+	<% if (loggedInUser == "") %>
+		<h3>Hello Anon</h3>
+	<% else %>
+		<h3>Hello <%= loggedInUser %></h3>
+	<% end %>	
+	
+	<% pics.each do | img | %>
+		<li>
+			<h2><%= img['title'] %></h2>
+			<img src=" <%= img['path'] %>">
+			<p><%= img["comment"] %></p>
+			
+		</li>
+	<% end %>
+</ul>
